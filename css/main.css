@@ -1,0 +1,733 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* bitter-regular - latin-ext_latin_cyrillic */
+@font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* bitter-500 - latin-ext_latin_cyrillic */
+  @font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* bitter-700 - latin-ext_latin_cyrillic */
+  @font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/bitter-v28-latin-ext_latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* raleway-regular - latin-ext_latin_cyrillic */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: 
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-500 - latin-ext_latin_cyrillic */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: 
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-500.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-700 - latin-ext_latin_cyrillic */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: 
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin-ext_latin_cyrillic-700.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+
+*{
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Bitter';
+}
+
+.container{
+    max-width: 1150px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.header__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #F5F5F5;
+    -webkit-box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.5);
+    padding: 15px 157px 16px 146px;
+}
+
+.header__list{
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    list-style-type: none;
+}
+
+.header__logo{
+    padding-right: 30px;
+}
+
+.header__list-link{
+    padding-right: 49px;
+}
+
+.header__list-link:last-child{
+    padding-right: 0;
+}
+
+.list__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1D2F38;
+
+}
+
+.list__img{
+    padding: 0 12px;
+}
+
+.list__img:first-child{
+   padding-left: 0;
+}
+
+.header__link{
+    padding-left: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1D2F38;
+}
+
+.header__link-img{
+    padding-right: 10px;
+}
+
+
+.hero{
+   margin-top: 145px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   height: 496px;
+   background: #E3EBF1;
+   border-radius: 10px;
+   padding: 49px 76px 50px 53px;
+}
+
+
+.hero__text{
+    margin: 0;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 52px;
+    color: #1D2F38;
+}
+
+.hero__next-text{ 
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   color: #10843F;
+}
+
+.hero__bottom-text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.hero__link{
+    text-decoration: none;
+    width: 161px;
+    height: 50px;
+    background: #17A550;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;    
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.intro__item{
+   margin-top: 77px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   list-style-type: none;
+}
+
+.intro__text{
+    margin-top: 77px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 40px;
+    color: #1D2F38
+}
+
+.intro__main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.intro__main-list::before{
+    content:'';
+    display: block;
+    width: 555px;
+    height: 400px;
+    background: url(../images/uy.png);
+    background-size: contain;
+    background-repeat: no-repeat ;
+}
+
+.main__first-text{
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1D2F38;
+}
+
+.main__last-text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1D2F38;
+    width: 546px;
+}
+
+.intro__right-list{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.intro__right-text::before{
+    content:'';
+    display: block;
+    width: 245px;
+    height: 150px;
+    background: url(../images/IMAGE-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.intro__right-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.right__text{
+    padding-left: 15px;
+    width: 256px;
+    height: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1D2F38;
+}
+
+.intro__bottom{
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    list-style: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D2F38;
+    margin-bottom: 100px;
+}
+
+.mainer{
+    background-image: url(../images/bg-view.svg);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 31px 40px 20px 30px;
+}
+
+.mainer__left{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.mainer__left-text{
+    padding-left: 12px;   
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1D2F38;
+}
+
+
+.mainer__right-link{
+    width: 111px;
+    height: 52px;
+    background: #17A550;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.bottomer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.bottomer__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.bottomer__title{
+    margin-top: 97px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 40px;
+    color: #1D2F38;
+}
+
+.bottomer__link::before{
+    content:'';
+    display: block;
+    width: 357px;
+    height: 200px;
+    background: url(../images/bottomer-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bottomer__link{
+   list-style-type: none;
+   margin-right: 40px;
+   width: 357px;
+   height: 371px;
+   background: #F7F9FA;
+   border-radius: 10px;
+}
+
+.bottomer__link:last-child{
+    margin-right: 0;
+}
+
+.bottomer__link-text{
+    padding: 10px 33px 39px 25px;
+}
+
+.link__first-text{
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 13px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1D2F38;
+}
+
+.link__last-text{
+    margin: 0;
+    width: 229px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1D2F38;
+}
+
+.bottom{
+    margin-bottom: 30px;
+}
+
+.ender{
+    background-image:url(../images/bg-letter.png);
+    height: 425px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 50px 50px 50px 60px;
+    margin-bottom: 80px;
+}
+
+.ender::before{
+    content:'';
+    display: block;
+    width: 500px;
+    height: 305px;
+    background: url(../images/mail2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ender__head{
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+}
+
+.ender__head-text{
+    padding-left: 20px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px; 
+    color: #1D2F38;
+}
+
+.ender__main{   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D2F38;
+}
+
+input[type=email], select {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #AABCC5;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=submit], select {
+    background-color: #FFC728;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.ender__main-link{  
+    text-decoration: none; 
+    padding-left: 10px;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+   color: #536D7A;
+}
+
+.footer{
+    background: #F7F9FA;
+    border-radius: 0px;
+    height: 588px;
+}
+
+.footer__main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    border-bottom: 3px solid #333333;
+}
+
+.footer__linker{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer__text{
+    width: 306px;
+    height: 100px;
+}
+
+.footer__center-item{  
+    margin-top: 100px;      
+   font-family: 'Bitter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 35px;
+   color: #333333;
+}
+
+.footer__center-link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+}
+
+.footer__center-linker::before{
+    content:'';
+    display: block;
+    width: 139px;
+    height: 100px;
+    background: url(../images/uy.png);
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer__center-linker{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer__link-inside{
+    padding-left: 10px;
+    width: 191px;
+    height: 36px;
+}
+
+.footer__end-title{
+    margin-top: 80px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+}
+
+input[type=search], select{
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer__end-linker{
+    list-style-type: none;
+    border-bottom: 1px solid  #333333;
+}
+
+.footer__end-link{
+    margin-bottom: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D2F38;
+}
+
+
+.footer__food{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer__link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+}
+
+.footer__food-linker{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__link{
+  padding-left: 10px;
+}
+
+.footer__link:first-child{
+padding-left: 0;
+}
+
